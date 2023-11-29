@@ -20,3 +20,36 @@ Understanding Daily Sales Phasing is essential because sales distribution is not
 ## 2. The Challenge
 
 The goal of this challenge is to develop innovative solutions for accurate prediction and analysis of Daily Sales Phasing, taking into account the unique shipping patterns associated with different countries and brands. By achieving this, we aim to enhance the precision of our sales forecasts and align our business strategies more closely with real-time market dynamics.
+
+## 3. Dataset Description
+This project includes several datasets, each serving a specific purpose in the analysis and modeling process. Below is a detailed description of each file:
+
+### 3.1. train_data.parquet:
+
+Description: This file contains sales data relevant for Exploratory Data Analysis (EDA).
+Time Range: The dataset spans from 2013 to 2022.
+Usage: Ideal for initial data exploration and understanding trends, patterns, and anomalies in the sales data over the specified period.
+
+### 3.2. submission_data.parquet:
+
+Description: Testing dataset intended for use with the forecast model.
+Time Range: Contains data for the latest available year, 2022.
+Usage: Utilized for evaluating the model's forecasting performance on unseen data.
+
+### 3.3. cleaned_training_data.csv:
+
+Description: Cleaned version of the training data.
+Details: This file represents the train_data.parquet after preprocessing steps such as handling missing values, outliers, and feature engineering.
+Usage: Ready for use in model training, ensuring the model learns from quality data.
+
+### 3.4. cleaned_submission_data.csv:
+
+Description: Cleaned version of the testing data.
+Details: Preprocessed form of submission_data.parquet, making it suitable for final model testing.
+Usage: To be fed into the trained model for generating predictions.
+
+### 3.5. submission.csv:
+
+Description: Final testing dataset with prediction results.
+Details: Contains the output from applying the trained model to cleaned_submission_data.csv.
+Usage: Useful for analysis of model performance, comparison with actuals (if available), and for submission in case of competitions or reporting.
